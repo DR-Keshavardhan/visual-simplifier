@@ -1,0 +1,54 @@
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --brand:#0ea5e9;
+  --accent:#0369a1;
+  --radius:10px;
+}
+
+* { box-sizing: border-box; }
+html,body,#root { height:100%; margin:0; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); color:#0f172a; }
+
+.header{
+  max-width:1100px; margin:28px auto 0; padding:12px 18px; display:flex; justify-content:space-between; align-items:center;
+}
+.title{ margin:0; font-size:20px; }
+.subtitle{ margin:4px 0 0; color:var(--muted); font-size:13px; }
+.small{ color:var(--muted); font-size:12px; }
+
+.container{
+  max-width:1100px; margin:18px auto; display:grid; grid-template-columns: 420px 1fr; gap:20px; padding:0 18px;
+}
+
+.left { }
+.right { }
+
+.card{
+  background:var(--card); padding:16px; border-radius:var(--radius); box-shadow:0 6px 18px rgba(8,24,48,0.06);
+}
+
+textarea { width:100%; min-height:160px; padding:10px; border-radius:8px; border:1px solid #e6eef6; font-size:14px; resize:vertical; }
+select, input[type="text"] { padding:8px 10px; border-radius:8px; border:1px solid #e6eef6; }
+
+.button-primary{
+  background:var(--brand); color:white; border:none; padding:10px 14px; border-radius:8px; cursor:pointer;
+}
+.button-ghost{ background:transparent; border:1px solid #cdebf8; padding:8px 12px; border-radius:8px; cursor:pointer; }
+
+.small-row{ display:flex; align-items:center; justify-content:space-between; margin-top:12px; gap:8px; }
+
+.output-title{ font-weight:600; font-size:16px; }
+.output-text{ margin-top:10px; color:#0f172a; white-space:pre-wrap; line-height:1.45; }
+
+.analogy{ margin-top:12px; padding:10px; background:#f0f9ff; border-radius:8px; color:#02457a; }
+
+.diagram{ margin-top:12px; text-align:center; }
+.diagram img{ max-width:100%; border-radius:8px; box-shadow:0 6px 16px rgba(2,6,23,0.06); }
+
+.chat-box{ margin-top:12px; }
+.chat-history{ max-height:160px; overflow:auto; border:1px solid #eef4fb; padding:8px; border-radius:8px; background:white; }
+.chat-input-row{ display:flex; gap:8px; margin-top:8px; }
+.chat-input-row input{ flex:1; padding:8px; border-radius:8px; border:1px solid #e6eef6; }
+
+.footer{ max-width:1100px; margin:20px auto; padding:8px 18px; color:var(--muted); font-size:13px; text-align:center; }
